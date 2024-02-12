@@ -1,5 +1,5 @@
 {
-    "name": "nl.idaas/laravel-openid-connect",
+    "name": "selfimilar/laravel-openid-connect",
     "description": "Drop-in replacement for Laravel Passport to add support for OpenID Connect",
     "type": "library",
     "authors": [
