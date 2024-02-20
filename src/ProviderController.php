@@ -62,11 +62,12 @@ class ProviderController extends BaseController
          */
         $crypt = resolve(KeyRepository::class)->getPublicKey();
 
+        $kid = (string) ($crypt->kid ?? '1');
         $result = [
             'alg' => 'RS256',
             'kty' => 'RSA',
             'use' => 'sig',
-            'kid' => $crypt->kid ?? 1
+            'kid' => $kid
         ];
 
         if (!empty($crypt->x509)) {
