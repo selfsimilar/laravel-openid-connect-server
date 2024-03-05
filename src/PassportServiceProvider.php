@@ -3,7 +3,8 @@
 namespace Idaas\Passport;
 
 use DateInterval;
-use Idaas\OpenID\Grant\AuthCodeGrant;
+// use Idaas\OpenID\Grant\AuthCodeGrant;
+use App\Auth\OpenID\Grant\AuthCodeGrant;
 use Idaas\OpenID\Grant\ImplicitGrant;
 use Idaas\OpenID\Repositories\ClaimRepositoryInterface;
 use Idaas\OpenID\Repositories\UserRepositoryInterface;
